@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    :root {
+    font-family: 'Manrope', Arial, sans-serif !important;
+}
+
+button {
+    font-family: 'Manrope', Arial, sans-serif !important;
+
+}
+
+body {
+    padding: 2rem;
+}
+
+.int_container {
+    display: flex;
+    justify-content: left;
+}
+
+.int_action {
+    font-size: 1.4rem;
+
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: .3rem 1.6rem;
+    transition: all .5s;
+    margin-left: 1rem;
+    letter-spacing: 1px;
+}
+
+.int_action:hover {
+    background-color: #4bb3c3;
+    box-shadow: 0 15px 50px -10px #4bb3c3;
+    cursor: pointer;
+    transform: translateY(-15%);
+}
+
+form input {
+    border-radius: 50px;
+    height: 25px;
+    width: 16rem;
+    padding: .3rem;
+}
+
+.main {
+    display: flex;
+    margin-top: .5rem;
+    align-items: center;
+}
+
+.label {
+    font-weight: 600;
+}
+
+.header img {
+    width: 54rem;
+    margin-top: 3rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_heading h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 113%;
+
+}
+
+.header_heading ul li p {
+    color: rgb(0, 0, 0);
+
+    font-size: 1.3rem;
+}
+
+.header_heading p {
+    color: rgb(109, 109, 109);
+    font-size: 1.5rem;
+}
+
+.logo {
+    width: 10%;
+}
+</style>
+</head>
+
+<body>
+    <img class="logo" src="https://uploads-ssl.webflow.com/6102a77c4733362012bd355d/6103ff3c8979ee0d8a995fa6_TRUENDO-Black.svg" alt="logo">
+    <div class="header">
+        <div class="header_heading">
+            <h1>Your all-in-one website privacy solution</h1>
+            <p>TRUENDO is an EU-based GDPR and CCPA compliance solution with consent management platform, privacy
+                policy, and cookie policy.</p>
+            <ul>
+                <li>
+                    <p>Firstly, create in a few clicks your TRUENDO account: <a
+                            href="https://console.truendo.com/signup" target="_blank">console.truendo.com</a></p>
+                </li>
+                <li>
+                    <p>Afterwards copy the site-Id under "Banner"</p>
+                </li>
+                <li>
+                    <p>Finally, paste the site-Id into the input field below and hit "Start"</p>
+                </li>
+            </ul>
+
+            <div class="int_container">
+                <form action="/integration-submit" method="POST">
+        
+                    <label for="siteId" class="label">Site-Id: </label>
+                    <div class="main">
+                        <input type="text" id="siteId" name="siteId">
+        
+                        <button class="int_action" type="submit">Start</button>
+                    </div>
+                </form>
+        
+            </div>
+            <p style="font-size: 1rem;">(You can also leave it blank and change it anytime)</p>
+
+        </div>
+        <img src="https://uploads-ssl.webflow.com/6102a77c4733362012bd355d/64469f38325978b5c3f77bbc_wix-hero-img.svg"
+            alt="hero-img">
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

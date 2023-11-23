@@ -1,0 +1,87 @@
+:root {
+    font-family: 'Manrope', Arial, sans-serif !important;
+}
+
+button {
+    font-family: 'Manrope', Arial, sans-serif !important;
+
+}
+
+body {
+    padding: 2rem;
+}
+
+.int_container {
+    display: flex;
+    justify-content: left;
+}
+
+.int_action {
+    font-size: 1.4rem;
+
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: .3rem 1.6rem;
+    transition: all .5s;
+    margin-left: 1rem;
+    letter-spacing: 1px;
+}
+
+.int_action:hover {
+    background-color: #4bb3c3;
+    box-shadow: 0 15px 50px -10px #4bb3c3;
+    cursor: pointer;
+    transform: translateY(-15%);
+}
+
+form input {
+    border-radius: 50px;
+    height: 25px;
+    width: 16rem;
+    padding: .3rem;
+}
+
+.main {
+    display: flex;
+    margin-top: .5rem;
+    align-items: center;
+}
+
+.label {
+    font-weight: 600;
+}
+
+.header img {
+    width: 54rem;
+    margin-top: 3rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header_heading h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 113%;
+
+}
+
+.header_heading ul li p {
+    color: rgb(0, 0, 0);
+
+    font-size: 1.3rem;
+}
+
+.header_heading p {
+    color: rgb(109, 109, 109);
+    font-size: 1.5rem;
+}
+
+.logo {
+    width: 10%;
+}

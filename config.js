@@ -1,0 +1,3 @@
+const APP_SECRET = 'a7450901-e5f9-438e-b16c-cf3f3cf7593c';
+
+exports.APP_SECRET = APP_SECRET;
